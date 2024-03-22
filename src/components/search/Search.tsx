@@ -1,12 +1,18 @@
-import { FaSearch } from 'react-icons/fa'
+import { IconType } from 'react-icons';
 
-function Search() {
+interface SearchProps {
+    text: string;
+    Icon?: IconType;
+    pd?: string;
+}
+
+function Search({ text, Icon, pd }: SearchProps) {
     return (
-        <div className="search">
+        <div className={`search ${pd}`}>
             <div className="search__icon">
-                <FaSearch className='secondcolor--color' size={"2vh"} />
+                {Icon && <Icon className='secondcolor--color' size={"2vh"} />}
             </div>
-            <input type="text" placeholder="Search..." className="search__input" />
+            <input type="text" placeholder={text} className="search__input" />
         </div>
     );
 }

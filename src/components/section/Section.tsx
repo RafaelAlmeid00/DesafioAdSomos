@@ -7,7 +7,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ height, children }) => {
   return (
-    <section className='section' style={{ height: height }}>
+    <section className='section content--displaycolumn' style={{ height: height }}>
       {children}
     </section>
   );

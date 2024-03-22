@@ -4,7 +4,7 @@ function Menu() {
 
     return (
         <>
-            <div className="menu menu--marginleft">
+            <div className="menu content--marginleft">
                 <nav className="menu__nav">
                     <ul className="menu__list">
                         <li className="menu__list__item"><a href="https://adsomos.com/" className="menu__item__link">Home</a></li>

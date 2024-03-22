@@ -18,7 +18,7 @@ function Button({ text, icon: Icon, width, height, link }: ButtonProps) {
 
     return (
         <a className='button--link' href={link}>
-            <button className='button menu--marginleft menu--marginright' style={style}>
+            <button className='button content--marginleft content--marginright' style={style}>
                 {Icon && <Icon className='button__icon' />}
                 <p className='button__text'>{text}</p>
             </button>
