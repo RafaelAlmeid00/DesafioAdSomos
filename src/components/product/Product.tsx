@@ -1,6 +1,5 @@
 import Image from "../image/Image"
 import Text from "../text/Text";
-import Title from "../text/Title";
 import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 
@@ -17,7 +16,7 @@ function Product({ height, width, src, alt, name, value }: ProductProps) {
 
     return (
         <>
-            <Image height={height} width={width} src={src} alt={alt} />
+            <Image height={height} width={width} src={src} alt={alt} border={"imagem--border"} />
             <div className="product content--displayflex">
                 <div className="product__infos content--displaycolumn">
                     <h1 className="content--displayflex secondcolor--color" style={{ fontSize: '1.5vw'}}>{name}</h1>

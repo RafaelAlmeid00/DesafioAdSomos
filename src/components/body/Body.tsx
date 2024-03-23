@@ -24,11 +24,11 @@ function Body() {
                 <Title text={"Find everything you need at TED Eletrônicos"} pd="content--padding content--displayflex" />
                 <Divider horizontal size={2} height="1px" width={"25vw"} color={'#3667cc'} />
                 <div className="banner content--padding">
-                    <Image height={"12vh"} width={"12vw"} src={router} alt={"Eletrônicos"} />
-                    <Image height={"12vh"} width={"12vw"} src={vacuum} alt={"Eletrônicos"} />
-                    <Image height={"12vh"} width={"12vw"} src={iphone} alt={"Eletrônicos"} />
+                    <Image height={"12vh"} width={"12vw"} src={router} alt={"Eletrônicos"} border={"imagem--border"} />
+                    <Image height={"12vh"} width={"12vw"} src={vacuum} alt={"Eletrônicos"} border={"imagem--border"} />
+                    <Image height={"12vh"} width={"12vw"} src={iphone} alt={"Eletrônicos"} border={"imagem--border"} />
                 </div>
-                <Button text="Shop now" width="20vw" height="5vh" link={"https://adsomos.com/"} />
+                <Button text="Shop now" width="25vw" height="5vh" link={"https://adsomos.com/"} />
             </Section>
             <Divider horizontal size={3} height="1px" width={"100vw"} color={"#3667cc"} />
             <Section height={"70vh"} >
@@ -49,6 +49,7 @@ function Body() {
                     <Text text={"TED Electronics Store offers cutting-edge gadgets and state-of-the-art electronics. From smartphones to smart home devices, we provide top-quality products to enhance your digital lifestyle. Visit us today for the latest in technology and innovation!"} />
                 </div>
             </Section>
+            <Divider horizontal size={10} height="1px" width={"100vw"} color={"#3667cc"} />
         </>
     )
 }

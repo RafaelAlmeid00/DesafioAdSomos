@@ -13,7 +13,6 @@ function Button({ text, icon: Icon, width, height, link }: ButtonProps) {
     const style = {
         width: width,
         height: height,
-        
     };
 
     return (
