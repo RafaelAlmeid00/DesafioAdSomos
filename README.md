@@ -1,31 +1,30 @@
-# React + TypeScript + Vite
+# Template Wireframe (Desafio Adsomos)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um template wireframe para o Desafio Adsomos. Ele fornece uma estrutura básica para desenvolvimento e pode ser utilizado para criar interfaces responsivas.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Uma biblioteca JavaScript para criar interfaces de usuário, que permite o desenvolvimento de componentes reutilizáveis e a construção de interfaces dinâmicas.
 
-## Expanding the ESLint configuration
+- **Vite**: Um construtor de aplicativos da web extremamente rápido e flexível, que oferece um ambiente de desenvolvimento moderno com carregamento rápido, recarregamento instantâneo e mais.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Metodologias e Padrões Utilizados
 
-- Configure the top-level `parserOptions` property like this:
+- **BEM (Block Element Modifier)**: Uma metodologia de nomenclatura de classes CSS que ajuda a criar códigos CSS mais reutilizáveis e sustentáveis, dividindo-os em blocos, elementos e modificadores.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Componentização**: O template segue o padrão de componentização, onde partes da interface são encapsuladas em componentes reutilizáveis, promovendo a modularidade e a manutenibilidade do código.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-"# DesafioAdSomos" 
+## Como Rodar Localmente
+
+1. Baixe o diretório do projeto.
+2. Execute `npm install` para instalar as dependências.
+3. Em seguida, execute `npm run dev` para iniciar o servidor local.
+
+## Acesso Online
+
+Você pode acessar o template online através do seguinte link: [Desafio Adsomos - Online](https://desafioadsomos.onrender.com).
+
+## Versão para Dispositivos Móveis
+
+O wireframe é responsivo e foi projetado para funcionar em dispositivos móveis a partir de 980px de largura.
+
