@@ -19,7 +19,7 @@ function Product({ height, width, src, alt, name, value }: ProductProps) {
             <Image height={height} width={width} src={src} alt={alt} border={"imagem--border"} />
             <div className="product content--displayflex">
                 <div className="product__infos content--displaycolumn">
-                    <h1 className="content--displayflex secondcolor--color" style={{ fontSize: '1.5vw'}}>{name}</h1>
+                    <h1 className="product__infos__name content--displayflex secondcolor--color">{name}</h1>
                     <Text text={`$${value}`} pd="product__infos__value content--displayflex product__infos__text--margin" />
                 </div>
                 <div className="product__rate">

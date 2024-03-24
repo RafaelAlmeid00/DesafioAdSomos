@@ -1,14 +1,29 @@
 import Image from "../image/Image"
 import logo from "../../assets/adsomos_logo.jpg"
 import Text from "../text/Text"
+import { useEffect, useState } from "react";
+import Section from "../section/Section";
+import Divider from "../divider/Divider";
 
 function Footer() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768);
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
       <footer className="footer primarycolor--background content--displayflex">
         <div className="footer__infos content--displaycolumn">
-          <Image height={"10vh"} width={"7vw"} src={logo} alt={"Logo"} />
+          <Image height={"10vh"} width={isMobile ? "20vw" : "7vw"} src={logo} alt={"Logo"} border={"footer__infos__image"} />
           <div className="footer__infos__text">
             <Text text={"1717 Harrison St, San Francisco, CA 94103, USA"} />
           </div>
@@ -39,6 +54,10 @@ function Footer() {
           <a className="footer__link" href="https://adsomos.com/"><p className="footer__text">Instagram</p></a>
         </div>
       </footer >
+      <div className="footer__company__name primarycolor--background">
+      <Divider horizontal size={3} height="1px" width={"100vw"} color={"white"} />
+        <span className="footer__company__name__text">© TED Eletronics</span>
+      </div>
     </>
   )
 }

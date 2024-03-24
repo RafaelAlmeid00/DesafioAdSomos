@@ -4,7 +4,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 980px) {
     .menu {
         width: auto;
         float: right;
@@ -66,4 +66,108 @@
     .button__text {
         font-size: 3vw;
     }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter__text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        margin: 0;
+    }
+
+    .newsletter__text:first-child {
+        width: auto;
+    }
+
+    .newsletter__text:last-child {
+        width: auto;
+    }
+
+    .newsletter__text__title {
+        margin-bottom: 2vh;
+
+    }
+
+    .newsletter__text__title--mobile {
+        font-size: 10vw;
+    }
+
+    .newsletter__text__text--mobile {
+        font-size: 10vw;
+
+    }
+
+    .text__content {
+        font-size: 2.5vw;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .product__infos {
+        padding: 1vh;
+    }
+
+    .product__infos__name {
+        font-size: 3.5vw;
+    }
+
+    .product__infos__value {
+        margin-top: 0.1vh;
+    }
+
+    .product__rate {
+        margin-left: 0;
+        margin-bottom: 3vh;
+        margin-top: -2vh;
+    }
+
+    .footer__title {
+        font-size: 2.2vw;
+        color: white;
+    }
+
+    .footer__text {
+        color: white;
+        font-size: 2.2vw;
+        margin: 0.5vh 0 0.5vh 0;
+    }
+
+    .footer__infos {
+        width: 40%;
+        height: inherit;
+        justify-content: center;
+        margin-left: -5vw;
+    }
+
+    .footer__infos__text {
+        margin-top: 0;
+        width: 45%;
+    }
+
+    .footer__infos__image {
+        height: 10vh;
+        width: 20vw;
+    }
+
+    .footer__company__name__text {
+        font-size: 3vw;
+    }
+    
 }

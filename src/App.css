@@ -257,6 +257,10 @@
     width: 40%;
 }
 
+.newsletter__text__text {
+    width: 80%;
+}
+
 .newsletter__text {
     align-items: start;
     justify-content: center;
@@ -377,4 +381,25 @@
 
 .footer__link {
     text-decoration: none;
+}
+
+.footer__infos__image {
+    height: 10vh;
+    width: 7vw;
+}
+
+.footer__company__name {
+    width: 100%;
+    margin-top: -5px;
+}
+
+.footer__company__name__text {
+    font-size: 1.2vw;
+    color: white;
+    margin-left: 3vw;
+    margin-top: 2vh;
+}
+
+.product__infos__name {
+    font-size: 1.5vw;
 }

@@ -36,7 +36,7 @@ function Slider({ images }: SliderProps) {
         <div className="slider">
             <IoMdArrowDropleft className="slider__iconleft" onClick={goToPrevSlide} />
             {visibleImages.map((src, index) => (
-                <Image key={index} height={"25vh"} width={"25vw"} src={src} alt={`Slide ${startIndex + index}`} />
+                <a href="https://adsomos.com"><Image key={index} height={"25vh"} width={"25vw"} src={src} alt={`Slide ${startIndex + index}`} /></a>
             ))}
             <IoMdArrowDropright className="slider__iconright" onClick={goToNextSlide} />
         </div>

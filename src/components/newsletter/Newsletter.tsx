@@ -8,8 +8,12 @@ function Newsletter() {
         <>
             <div className="newsletter content--padding content--marginright">
                 <div className="newsletter__text content-displaycolumn">
-                    <Title text={"Newsletter"} />
-                    <Text text={"Cadastre-se e receba novidades em primeira mão para aproveitar os produtos que estão em promoção!"} pd={"newsletter__text--margintop"} />
+                    <div className="newsletter__text__title">
+                        <Title text={"Newsletter"} pd="newsletter__text__title--mobile"/>
+                    </div>
+                    <div className="newsletter__text__text">
+                        <Text text={"Sign up and receive firsthand updates to take advantage of the products on sale!"} pd={"newsletter__text--margintop newsletter__text__text--mobile"} />
+                    </div>
                 </div>
                 <div className="newsletter__subscribe">
                     <Search text={"Email Adress"} pd="search--newsletter content--border " />

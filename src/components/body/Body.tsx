@@ -21,37 +21,37 @@ function Body() {
     return (
         <>
             <Section height={"95vh"}>
-                <Title text={"Find everything you need at TED Eletrônicos"} pd="content--padding content--displayflex" />
+                <Title text={"Find everything you need at TED Eletronics"} pd="content--padding content--displayflex" />
                 <Divider horizontal size={2} height="1px" width={"25vw"} color={'#3667cc'} />
                 <div className="banner content--padding">
-                    <Image height={"12vh"} width={"12vw"} src={router} alt={"Eletrônicos"} border={"imagem--border"} />
-                    <Image height={"12vh"} width={"12vw"} src={vacuum} alt={"Eletrônicos"} border={"imagem--border"} />
-                    <Image height={"12vh"} width={"12vw"} src={iphone} alt={"Eletrônicos"} border={"imagem--border"} />
-                </div>
-                <Button text="Shop now" width="25vw" height="5vh" link={"https://adsomos.com/"} />
-            </Section>
-            <Divider horizontal size={3} height="1px" width={"100vw"} color={"#3667cc"} />
-            <Section height={"70vh"} >
-                <Title text={"Featured Products"} pd="content--padding content--displayflex" />
-                <Slider images={[printer, speaker, router, headphones, alexa, vacuum, projector, iphone]} />
-            </Section>
-            <Section height={"25vh"} >
-                <Newsletter />
-            </Section>
-            <Divider horizontal size={3} height="1px" width={"100vw"} color={"#3667cc"} />
-            <Section height={"70vh"}>
-                <DisplayCase />
-            </Section>
-            <Section height={"35vh"}>
-                <Divider horizontal size={3} height="1px" width={"100vw"} color={"#3667cc"} />
-                <div className="about content--displaycolumn">
-                    <Title text={"About Our Store"} />
-                    <Text text={"TED Electronics Store offers cutting-edge gadgets and state-of-the-art electronics. From smartphones to smart home devices, we provide top-quality products to enhance your digital lifestyle. Visit us today for the latest in technology and innovation!"} />
-                </div>
-            </Section>
-            <Divider horizontal size={10} height="1px" width={"100vw"} color={"#3667cc"} />
-        </>
-    )
+                    <a href="https://adsomos.com"><Image height={"12vh"} width={"12vw"} src={router} alt={"Eletronics"} border={"imagem--border"} /></a> 
+                        <a href="https://adsomos.com"><Image height={"12vh"} width={"12vw"} src={vacuum} alt={"Eletronics"} border={"imagem--border"} /></a> 
+                            <a href="https://adsomos.com"><Image height={"12vh"} width={"12vw"} src={iphone} alt={"Eletronics"} border={"imagem--border"} /></a> 
+                            </div>
+                            <Button text="Shop now" width="25vw" height="5vh" link={"https://adsomos.com/"} />
+                        </Section>
+                        <Divider horizontal size={3} height="1px" width={"100vw"} color={"#3667cc"} />
+                        <Section height={"70vh"} >
+                            <Title text={"Featured Products"} pd="content--padding content--displayflex" />
+                            <Slider images={[printer, speaker, router, headphones, alexa, vacuum, projector, iphone]} />
+                        </Section>
+                        <Section height={"25vh"} >
+                            <Newsletter />
+                        </Section>
+                        <Divider horizontal size={3} height="1px" width={"100vw"} color={"#3667cc"} />
+                        <Section height={"70vh"}>
+                            <DisplayCase />
+                        </Section>
+                        <Section height={"35vh"}>
+                            <Divider horizontal size={3} height="1px" width={"100vw"} color={"#3667cc"} />
+                            <div className="about content--displaycolumn">
+                                <Title text={"About Our Store"} />
+                                <Text text={"TED Electronics Store offers cutting-edge gadgets and state-of-the-art electronics. From smartphones to smart home devices, we provide top-quality products to enhance your digital lifestyle. Visit us today for the latest in technology and innovation!"} />
+                            </div>
+                        </Section>
+                        <Divider horizontal size={10} height="1px" width={"100vw"} color={"#3667cc"} />
+                    </>
+                    )
 }
 
-export default Body
+                    export default Body

@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Divider from "../divider/Divider";
-import Image from "../image/Image";
-import logo from "../../assets/Adsomos-Logo.png"
 
 function Menu() {
     const [showMenu, setShowMenu] = useState(false);
