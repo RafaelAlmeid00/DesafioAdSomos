@@ -2,7 +2,6 @@ import Image from "../image/Image"
 import logo from "../../assets/adsomos_logo.jpg"
 import Text from "../text/Text"
 import { useEffect, useState } from "react";
-import Section from "../section/Section";
 import Divider from "../divider/Divider";
 
 function Footer() {
