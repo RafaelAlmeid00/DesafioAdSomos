@@ -51,6 +51,25 @@
         display: block;
     }
 
+    .search {
+        width: 40vw;
+    }
+
+    .search--newsletter {
+        width: 30vw;
+    }
+
+    .search__input--mobile  {
+        padding-left: 4vw;
+    }
+
+    .newsletter__subscribe {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
     .header__button {
         display: none;
     }

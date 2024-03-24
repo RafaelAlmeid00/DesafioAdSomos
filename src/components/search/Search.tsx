@@ -7,12 +7,17 @@ interface SearchProps {
 }
 
 function Search({ text, Icon, pd }: SearchProps) {
+
     return (
         <div className={`search ${pd}`}>
             <div className="search__icon">
                 {Icon && <Icon className='secondcolor--color' size={"2vh"} />}
             </div>
-            <input type="text" placeholder={text} className="search__input" />
+            <input
+                type="text"
+                placeholder={text}
+                className={`search__input ${Icon ? '' : 'search__input--mobile'}`}
+            />
         </div>
     );
 }
